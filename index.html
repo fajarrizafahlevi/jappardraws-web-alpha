@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jappar Draws</title>
+</head>
+<body>
+    <header class="responsive">
+        <div>
+            <button onclick="openPage('home', this)" id="defaultOpen"><h1>Jappar Draws</h1></button>
+        </div>
+        <nav>
+            <button onclick="openPage('about', this)">About</button>
+            <button onclick="openPage('gallery', this)">Gallery</button>
+            <button onclick="openPage('contact', this)">Contact</button>
+        </nav>
+    </header>
+    <main>
+        <div id="content">
+            <article class="page" id="home">
+                <section>
+                    <p id="hello">Hi! I'm Jappar</p>
+                    <h2 id="job">2D Artist</h2>
+                    <p>A freelance artist specialty in 2D character illutration.</p>
+                    <button class="on-page" onclick="openPage('about', this)">Get to know me</button>
+                </section>
+            </article>
+            <article class="page responsive" id="about">
+                    <figure>
+                        <img src="assets/images/me.jpg">
+                    </figure>
+                    <section>
+                        <h2 class="title">About me</h2>
+                        <p>I start becoming a part-time freelance illustrator at early 2020. Until now, I've finished commissions order with total more than +50 order from various platform like Fiverr, Artists&Clients, Sketchmob and Facebook.</p>
+                        <button class="on-page" onclick="openPage('gallery', this)">See my works</button>
+                    </section>
+            </article>
+            <article class="page" id="gallery">
+                <h2 class="title text-center">Illustration</h2>
+                <section class="slideShow">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <figure id="examples">
+                        <img class="mySlides" src="assets/images/sample1.jpg">
+                        <img class="mySlides" src="assets/images/sample2.jpg">
+                    </figure>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </section>
+                <button class="on-page" onclick="openPage('contact', this)">Interested?</button>
+            </article>
+            <article class="page" id="contact">
+                <h2 class="title">Contact me</h2>
+                <section class="text-center">
+                    <img src="assets/images/icon.jpg">
+                    <h3>Jappar Draws</h3>
+                    <p class="email">jappardraws@gmail.com</p>
+                </section>
+            </article>
+        </div>
+        <aside class="card">
+            <p class="title text-center">Web developed by:</p>
+            <section class="responsive" id="profile">
+                <img src="assets/images/foto.jpg">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td>: Fajar Riza Fahlevi</td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>: fajarrizafahlevi@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th>Phone</th>
+                        <td>: +62 896 3107 1443</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>: Pringsewu, Lampung</td>
+                    </tr>
+                </table>
+            </section>
+        </aside>
+    </main>
+    <footer class="text-center">
+        <p>Jappar Draws 2020-2022</p>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>

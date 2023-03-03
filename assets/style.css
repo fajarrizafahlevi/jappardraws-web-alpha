@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    top: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.page {
+    padding: 80px 50px 20px;
+    height: 100vh;
+    flex-direction: column;
+}   
+
+.page, .mySlides {
+    display: none;
+}
+
+.page, #profile {
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    margin: 10px ;
+    /* background-image: linear-gradient(to bottom right, #6d7bb5,#52569e); */
+    /* background-image: linear-gradient(to bottom right, #44415c, #35314a); */
+    background-color: black;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.title {
+    margin: 5px 0px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.on-page {
+    margin-top: 10px;
+    background-color: lightgray;
+}
+
+header, .slideShow, .responsive {
+    display: flex;
+    flex-direction: row;
+}
+
+.slideShow {
+    width: 280px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev, .next {
+    display: block;
+    color: gray;
+}
+
+.prev:hover, .next:hover {
+    color: black;
+}
+
+.prev, .next, button {
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+button:hover {
+    background-image: linear-gradient(to bottom right, #96d678, #68ad94);
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+#hello {
+    font-size: 20px;
+}
+
+#job {
+    font-size: 40px;
+}
+
+#about section {
+    max-width: 450px;
+}
+
+#about img {
+    width: 150px;
+    margin-right: 30px;
+}
+
+#gallery img {
+    height: 320px;
+}
+
+#contact img {
+    width: 150px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+#profile img {
+    height: 100px;
+    margin: 10px; 
+    border-radius: 5px;
+    border: solid white;
+}
+
+td, th {
+    font-size: small;
+    text-align: left;
+}
+
+.email {
+    font-size: small;
+}
+
+footer {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .responsive {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .page {
+        padding-top: 121.33px;
+        text-align: center;
+    }
+
+    #about img, table {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 280px) {
+    #job {
+        font-size: 25px;
+    }
+
+    .slideShow {
+        width: 240px;
+    }
+
+    #gallery img {
+        height: 300px;
+    }
+
+    #about p, th, td {
+        font-size: x-small;
+    }
+}
